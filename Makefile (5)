@@ -1,0 +1,6 @@
+GS = -g -std=c99
+sh257 : csapp.c csapp.h shellex.c
+	gcc $(CFLAGS) -pthread csapp.c csapp.h shellex.c -o sh257
+    
+clean : 
+	rm -v sh257
